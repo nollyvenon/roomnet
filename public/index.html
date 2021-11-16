@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#000000" />
+    <meta name="description" content="Rooms" />
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/bootstrap.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/style.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/animate.min.css" />
+    <link
+      rel="stylesheet"
+      href="%PUBLIC_URL%/css/color.css"
+      id="color-change"
+    />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/layerslider.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/css/owl.carousel.min.css" />
+    <link rel="stylesheet" href="%PUBLIC_URL%/fonts/flaticon/flaticon.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800;900&amp;display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700;900&amp;display=swap"
+      rel="stylesheet"
+    />
+
+    <!--
+      manifest.json provides metadata used when your web app is installed on a
+      user's mobile device or desktop. See https://developers.google.com/web/fundamentals/web-app-manifest/
+    -->
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    <!--
+      Notice the use of %PUBLIC_URL% in the tags above.
+      It will be replaced with the URL of the `public` folder during the build.
+      Only files inside the `public` folder can be referenced from the HTML.
+
+      Unlike "/favicon.ico" or "favicon.ico", "%PUBLIC_URL%/favicon.ico" will
+      work correctly both with client-side routing and a non-root public URL.
+      Learn how to configure a non-root public URL by running `npm run build`.
+    -->
+    <title>RoomNets</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    <script src="%PUBLIC_URL%/js/draggable-0.1.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery.slider.js"></script>
+    <script src="%PUBLIC_URL%/js/owl.carousel.min.js"></script>
+    <script src="%PUBLIC_URL%/js/wow.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery.cookie.js"></script>
+    <script src="%PUBLIC_URL%/js/color-settings.js"></script>
+    <script src="%PUBLIC_URL%/js/custom.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery-v3.4.1.js"></script>
+    <script src="%PUBLIC_URL%/js/greensock.js"></script>
+    <script src="%PUBLIC_URL%/js/layerslider.transitions.js"></script>
+    <script src="%PUBLIC_URL%/js/layerslider.kreaturamedia.jquery.js"></script>
+    <script src="%PUBLIC_URL%/js/popper.min.js"></script>
+    <script src="%PUBLIC_URL%/js/bootstrap.min.js"></script>
+    <script src="%PUBLIC_URL%/js/tmpl.js"></script>
+    <script src="%PUBLIC_URL%/js/jquery.dependClass-0.1.js"></script>
+
+    <script>
+      // Layer Slider
+      //------------------------------------
+      $("#slider").layerSlider({
+        sliderVersion: "6.2.1",
+        type: "fullwidth",
+        responsiveUnder: 0,
+        layersContainer: 1200,
+        maxRatio: 1,
+        parallaxScrollReverse: true,
+        hideUnder: 0,
+        hideOver: 100000,
+        skin: "v5",
+        showBarTimer: false,
+        showCircleTimer: false,
+        thumbnailNavigation: "disabled",
+        allowRestartOnResize: false,
+        skinsPath: "images/slider/skins/",
+        height: 900,
+      });
+    </script>
+    <script>
+      document.onkeydown = function (e) {
+        if (e.keyCode == 123) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "I".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "J".charCodeAt(0)) {
+          return false;
+        }
+        if (e.ctrlKey && e.keyCode == "U".charCodeAt(0)) {
+          return false;
+        }
+
+        if (e.ctrlKey && e.shiftKey && e.keyCode == "C".charCodeAt(0)) {
+          return false;
+        }
+      };
+    </script>
+  </body>
+</html>

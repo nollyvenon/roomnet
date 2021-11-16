@@ -1,0 +1,593 @@
+/* @import url("https://fonts.googleapis.com/css2?family=Roboto:wght@200&display=swap");
+
+* {
+  box-sizing: border-box;
+  font-family: "Roboto", sans-serif;
+  list-style: none;
+  transition: all 1s ease;
+}
+:root {
+  --mypurple: #6f31ce;
+  --mygreen: #11c280;
+  --mygreen2: #74e7bd;
+  --mywhite: #fff;
+  --myorange: #ff9100;
+  --myblue: #1b65e3;
+  --mygrey: #707070;
+} */
+input:focus,
+select:focus {
+  outline: none;
+  border-color: #8b96a0;
+  box-shadow: 0 0 10px #9ecaed;
+}
+
+body {
+  padding: 0;
+}
+.text1 {
+  color: #fff;
+  font-size: 13px;
+  text-shadow: 0 0 1px rgb(189, 188, 188);
+}
+.text9 {
+  font-size: 13px;
+}
+.text8 {
+  text-align: left;
+  line-height: 1.5;
+  font-weight: 600;
+}
+.text1s {
+  color: #fff;
+  font-size: 15px;
+  text-shadow: 0 0 1px rgb(189, 188, 188);
+}
+.text3 {
+  color: #bbbaba;
+  font-size: 12px;
+  text-shadow: 0 0 1px rgb(189, 188, 188);
+}
+.text3S {
+  color: #f2f2f2;
+  font-size: 12px;
+  text-shadow: 0 0 1px rgb(189, 188, 188);
+}
+.text3b {
+  color: var(--mygreen2);
+  font-size: 13px;
+  text-shadow: 0 0 1px rgb(189, 188, 188);
+}
+.text5 {
+  color: #ff9100;
+  font-size: 12px;
+  white-space: nowrap;
+  text-shadow: 0 0 1px rgb(189, 188, 188);
+}
+.text6 {
+  font-size: 11px;
+  white-space: nowrap;
+  text-shadow: 0 0 1px rgb(189, 188, 188);
+}
+.text7 {
+  color: #fff;
+  float: left;
+  font-size: 13px;
+  align-self: flex-start;
+}
+
+.nav-bar {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+
+  height: 80px;
+}
+
+.nav-bar2 {
+  height: 65px;
+  padding: 0 20px;
+  border-radius: 6px;
+}
+.purple-text {
+  color: var(--mypurple);
+}
+.green-text {
+  color: #11c280;
+}
+.header-text {
+  font-weight: 600;
+}
+
+.nav-lift-listing {
+  display: inline-flex;
+}
+.nav-lift-listing li {
+  margin: 0 20px;
+  font-size: 13px;
+  cursor: pointer;
+}
+
+.main-body {
+  background-image: url("./images/back2.png");
+
+  width: 99%;
+  height: 100vh;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.main-body2 {
+  background-image: url("./images/back4.png");
+
+  width: 99%;
+  height: 100vh;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+}
+.man4img {
+  width: 85%;
+}
+.man4 {
+  top: 0;
+  /* width: 300px; */
+  margin: auto;
+  position: absolute;
+  left: 0;
+  right: 0;
+  transform: translateY(-210px);
+}
+
+@media (min-width: 630px) {
+  .right-spans > span {
+    margin-right: 30px;
+  }
+  .nav-bar {
+    padding: 0 9%;
+  }
+}
+@media (max-width: 790px) {
+  /* *{
+          font-size: 12px;
+      } */
+  .dashboard-left {
+    display: none;
+  }
+}
+
+@media (max-width: 630px) {
+  /* *{
+        font-size: 12px;
+    } */
+  .right-spans > span {
+    margin-right: 10px;
+  }
+  .nav-bar {
+    padding: 0 10px;
+  }
+}
+@media (max-width: 500px) {
+  .man4 {
+    transform: translateY(-100px);
+  }
+}
+.Homefooter {
+  position: relative;
+  background-image: url("./images/back3.png");
+  margin-top: auto;
+  width: 100%;
+  height: 60%;
+  -webkit-background-size: contain;
+  -moz-background-size: contain;
+  -o-background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.btn1 {
+  width: 110px;
+  margin: 1px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #201c1c;
+  color: var(--mypurple);
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+
+.btn1:hover {
+  color: #f2f2f2;
+  width: 103px;
+  background-color: var(--mypurple);
+}
+.btn2:hover {
+  color: #ff9100;
+  background-color: #f2f2f2;
+  width: 103px;
+}
+.btn3:hover {
+  color: #11c280;
+  width: 103px;
+  background-color: #f2f2f2;
+}
+.btn2 {
+  margin: 1px;
+  width: 110px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #ff9100;
+  color: #f2f2f2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn5 {
+  margin: 1px;
+  width: 200px;
+  border-radius: 4px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: dodgerblue;
+  color: #f2f2f2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.btn3 {
+  width: 110px;
+  margin: 1px;
+  height: 40px;
+  border-radius: 20px;
+  border: none;
+  background-color: #11c280;
+  color: #f2f2f2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.purple-back {
+  background-color: var(--mypurple) !important;
+}
+.green-back {
+  background-color: var(--mygreen) !important;
+}
+.blue-back {
+  background-color: var(--myblue) !important;
+}
+.grey-back {
+  background-color: var(--mygrey) !important;
+}
+.orange-back {
+  background-color: var(--myorange) !important;
+}
+.green-back2 {
+  background-color: var(--mygreen2) !important;
+}
+.white-back {
+  background-color: var(--mywhite) !important;
+}
+.btn4 {
+  width: 100%;
+
+  height: 35px;
+  margin: 5px;
+  margin-bottom: 15px;
+  border: none;
+  background-color: #11c280;
+  color: #f2f2f2;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.man-section {
+  background-color: #fff;
+  height: 500px;
+  border-top-left-radius: 10px;
+  border-bottom-left-radius: 10px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+}
+@media (max-width: 970px) {
+  .man-section {
+    display: none !important;
+  }
+}
+.columnCenter {
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+}
+.verticalCenterRow {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-items: center;
+  width: 100%;
+}
+.verticalCenterRow2 {
+  display: flex;
+
+  /* flex-direction: row;
+  align-items: center; */
+
+  width: 100%;
+}
+.formsection {
+  background-color: var(--mypurple);
+  height: 500px;
+  padding-top: 40px;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+}
+.formsection.formsection2 {
+  background-color: var(--mygreen) !important;
+}
+.formsection > form {
+  width: 85%;
+}
+
+.formsection ::placeholder {
+  /* Chrome, Firefox, Opera, Safari 10.1+ */
+  color: #f2f2f2;
+  font-size: 13px;
+  opacity: 1; /* Firefox */
+}
+
+.formsection :-ms-input-placeholder {
+  /* Internet Explorer 10-11 */
+  color: #f2f2f2;
+  font-size: 13px;
+}
+
+.formsection ::-ms-input-placeholder {
+  /* Microsoft Edge */
+  color: #f2f2f2;
+  font-size: 13px;
+}
+
+.formMain {
+  margin-top: 50px;
+}
+.formsection2 .myInput {
+  background-color: #4dd1a0;
+}
+.myInput {
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  width: 100%;
+  padding: 10px;
+  color: #dddada;
+  background-color: #9365da;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.myInput2 {
+  height: 40px;
+  border-radius: 4px;
+  border: none;
+  font-size: 14px;
+  width: 100%;
+  padding: 10px;
+  color: #969191;
+  background-color: #f2f2f2;
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+.text2 {
+  color: #fff;
+  float: left;
+  align-self: flex-start;
+}
+.text2s {
+  color: #fff;
+  float: left;
+  font-size: 14px;
+  align-self: flex-start;
+}
+
+.jackpot-winner {
+  margin-top: auto;
+  height: 60px;
+  background-color: #eee;
+  border: none;
+}
+
+.jackpot-winner .mycardbody {
+  height: 100%;
+}
+
+.icon2 {
+  background-color: #ff9100;
+  height: 100%;
+}
+.winner-section {
+  padding-left: 20px;
+}
+
+.dashboard-left {
+  height: 450px;
+}
+.dashboard-right {
+  min-height: 450px;
+  padding-top: 30px;
+}
+.dashboard-left-listing {
+  margin-top: 29px;
+
+  padding: 0;
+}
+
+.dashboard-left-listing > li {
+  color: #dddcdc;
+  font-size: 13px;
+  margin-bottom: 20px;
+  cursor: pointer;
+  width: 90%;
+}
+.dashboard-left-listing > li.active {
+  color: #fff;
+}
+/* .dashboard-left-listing > li:nth-child(-n + 3):hover {
+
+} */
+
+.dashboard-left-listing > li:first-child {
+  font-size: 14px;
+  margin-bottom: 3px;
+  color: #fff;
+}
+
+.line1 {
+  height: 1px;
+  width: 100%;
+  background-color: #d3d2d2;
+}
+.line2 {
+  height: 1px;
+  width: 100%;
+  background-color: var(--mygreen2);
+}
+
+.Category-card {
+  height: 80px;
+  margin: 5px;
+  color: var(--mywhite);
+  cursor: pointer;
+  font-size: 12px;
+  border: none;
+  box-shadow: rgba(0, 0, 0, 0.15) 1.95px 1.95px 2.6px;
+}
+.Category-card:hover {
+  border: 1px solid lightblue;
+}
+
+.qcard {
+  height: 60px;
+  background-color: #ff9100;
+  padding: 2px;
+  box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 3px 0px,
+    rgba(0, 0, 0, 0.06) 0px 1px 2px 0px;
+  margin: 10px;
+}
+.qcard card-body {
+  margin: 0;
+  width: 100%;
+}
+.scratch {
+  cursor: pointer;
+  flex-basis: 80%;
+  height: 100%;
+  border: none;
+  font-size: 13px;
+  background-color: #fff;
+}
+
+.card3 {
+  height: 50px;
+  background: #f2f2f2;
+
+  margin: 8px;
+}
+.alertOverlay {
+  width: 90vw;
+  height: 100vh;
+  background-color: rgb(250, 249, 249, 0.8);
+  position: absolute;
+
+  z-index: 4;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-left: auto;
+  margin-right: auto;
+  left: 0;
+  right: 0;
+  text-align: center;
+}
+.alertCard {
+  height: 400px;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.blured {
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 100%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+.alertCard div {
+  height: 100%;
+}
+
+.btn33 {
+  background-color: #fff;
+  color: #fff;
+  margin: 10px;
+  padding: 4px 17px;
+  border: none;
+  text-transform: capitalize;
+  border-radius: 3px !important;
+  font-weight: 200;
+  font-size: 14px;
+}
+.cardB {
+  margin: 5px;
+}
+
+.gameplayHistory {
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+}
+.gamehistoryCard {
+  background-color: #92f2ce;
+  min-height: 45px;
+  padding: 5px;
+  margin: 10px;
+  cursor: pointer;
+  border-radius: 2px;
+}
+.gamehistoryCard.active {
+  background-color: #f2f2f2;
+}
+
+.main2 {
+  align-items: flex-start !important;
+}
+.gamehistoryCard h6 {
+  font-size: 13px;
+  font-style: italic;
+  font-weight: 600;
+  color: rgb(117, 115, 115);
+}
+.gamehistoryCard h4 {
+  font-size: 10px;
+  font-style: italic;
+}
+
+.historyPreview {
+  padding-top: 40px;
+  height: 250px;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+}
+.wonBtn {
+  background-color: rgb(22, 238, 22) !important;
+  width: 70px !important;
+  border: none;
+  border-radius: 20px;
+  font-size: 13px;
+  height: 30px;
+  color: #f2f2f2;
+}
